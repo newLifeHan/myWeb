@@ -29,7 +29,10 @@ const router = new VueRouter({
                 title:'参数生成'
             }
         },
-        
+        {
+            path:'/',
+            redirect:'/Home'
+        },
     ]
 })
 

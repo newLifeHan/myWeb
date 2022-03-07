@@ -43,7 +43,7 @@ export default {
           type: 'warning',
           center:true,
           callback: () => {
-            this.$refs.fileName.focus()
+            this.$refs.fileName.focus();
           }
         });
         return;
@@ -62,7 +62,7 @@ export default {
       axios
         .post("https://young.mba:3332/toCrypt", {
           filename: this.fileName,
-          DK: this.DK,
+          DK: this.DKName,
         })
         .then(
           (response) => {
